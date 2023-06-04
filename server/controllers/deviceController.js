@@ -59,7 +59,7 @@ class DeviceController {
             });
         }
         if (brandId && typeId) {
-            devices = await Device.findfindAndCountAllAll({
+            devices = await Device.findAndCountAll({
                 where: { typeId, brandId },
                 limit,
                 offset,
